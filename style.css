@@ -1,0 +1,170 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: Segoe 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: hidden;
+    /* overflow-y: scroll; */
+}
+
+body{
+    overflow-y: hidden;
+}
+
+.logo{
+    width: 7rem;
+    height: 1.2rem;
+}
+
+.nav-row a{
+    text-decoration: none;
+    color: #262626;
+    font-size: 0.8rem;
+}
+
+nav a:hover{
+    border-bottom: #262626 2px solid;
+}
+
+.add-section{
+    height: 7vh;
+    background-color: #6B0E34;
+}
+
+.add-section a{
+    text-decoration: none;
+    color: white;
+}
+
+.add-section a :hover{
+    text-decoration: underline;
+}
+
+.box-img{
+    width: 4rem;
+    height: 2rem;
+}
+
+.box a{
+    font-size: 0.9rem;
+    color: black;
+    font-weight: 600;
+}
+
+.cat-card a{
+    text-decoration: none;
+    color: #6B0E34;
+}
+
+.social-icon{
+    width: 2rem;
+    height: 2rem;
+}
+
+.back_to_top{
+    height: 7vh;
+    float: left;
+
+}
+
+button{
+    padding: 0.3rem;
+}
+
+footer{
+    background-color: #F2F2F2;
+}
+
+footer .row a{
+    text-decoration: none;
+    color: #262626;
+    font-size: 0.8rem;
+    padding: 0.4rem 0;
+}
+
+.c-heading-4{
+    font-weight: 600;
+}
+
+.c-heading-4 :hover{
+    text-decoration: underline;
+}
+
+/* full image for background */
+.full{
+    position: relative;
+    color: black;
+    text-align: center;
+}
+
+.content{
+    position: absolute;
+    width: 30%;
+    padding: 3rem;
+    top:4rem;
+    left: 4rem;
+}
+
+.for_one_person{
+    color: white;
+    background-color: black;
+    padding: 0.4rem;
+    margin-right: 1rem;
+}
+
+.links a{
+   color: black;
+   font-weight: 500;
+}
+
+.last_line{
+    text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+    .cat-card {
+        width: 2rem;
+        }
+  }
+
+h2{
+    overflow-y: hidden;
+}
+
+.lines{
+    display: none;
+}
+
+.cat-card{
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1380px) {
+    /* .d {
+        display: inline;
+        } */
+    .nav-row .n{
+        display: none;
+    }
+  }
+  
+  @media screen and (max-width: 1380px) {
+    .d {
+        display: none;
+        }
+    .nav-row .n{
+        display: none;
+    }
+    .lines{
+        display: inline;
+    }
+  }
+
+  @media screen and (max-width: 765px) {
+.cat-card{
+    width: 100%;
+    margin: 0 auto;
+}
+
+  }
+  
