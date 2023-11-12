@@ -3,13 +3,11 @@
     margin: 0;
     text-decoration: none;
     font-family: Segoe 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     /* overflow-y: scroll; */
 }
 
-body{
-    overflow-y: hidden;
-}
+
 
 .logo{
     width: 7rem;
@@ -22,9 +20,38 @@ body{
     font-size: 0.8rem;
 }
 
-nav a:hover{
-    border-bottom: #262626 2px solid;
+.c-uhff-link{
+    font-size: 11px;
 }
+
+.c-uhff-link:hover{
+    /* border-bottom: #262626 2px solid; */
+    text-decoration: underline;
+}
+
+nav .c-uhff-link:hover{
+    border-bottom: #262626 2px solid;
+    text-decoration: none;
+}
+
+nav .sign:hover{
+    
+    text-decoration: none;
+}
+
+.to-show{
+    display: none;
+}
+
+@media screen and (max-width: 707px) {
+    .to-show{
+        display: inline;
+    }
+    nav .c-uhff-link{
+        display: none;
+    }
+  }
+
 
 .add-section{
     height: 7vh;
@@ -32,17 +59,29 @@ nav a:hover{
 }
 
 .add-section a{
-    text-decoration: none;
+    /* text-decoration: none; */
     color: white;
 }
 
 .add-section a :hover{
     text-decoration: underline;
+    text-decoration-color:white ;    
 }
 
+/* .buy :hover{
+    text-decoration: underline;
+    text-decoration-color:white ;
+    
+} */
+
+.box{
+    word-wrap: break-word;
+    background-clip: border-box;
+    /* width: auto; */
+}
 .box-img{
     width: 4rem;
-    height: 2rem;
+    height: 2.5rem;
 }
 
 .box a{
@@ -50,10 +89,19 @@ nav a:hover{
     color: black;
     font-weight: 600;
 }
-
+.cat-card{
+    border: none;
+}
 .cat-card a{
     text-decoration: none;
     color: #6B0E34;
+    font-weight: 500;
+}
+
+.cat-card a:hover{
+    text-decoration: underline;
+    text-decoration-color:#6B0E34;
+
 }
 
 .social-icon{
@@ -78,7 +126,7 @@ footer{
 footer .row a{
     text-decoration: none;
     color: #262626;
-    font-size: 0.8rem;
+    font-size: 11px;
     padding: 0.4rem 0;
 }
 
@@ -92,10 +140,15 @@ footer .row a{
 
 /* full image for background */
 .full{
+
+
     position: relative;
     color: black;
     text-align: center;
 }
+
+
+
 
 .content{
     position: absolute;
@@ -112,6 +165,53 @@ footer .row a{
     margin-right: 1rem;
 }
 
+@media screen and (max-width: 1250px) {
+    .h2 {
+        font-size: 1.5rem;
+        }
+  
+  .content{
+    top:3rem;
+    left: 3rem;
+    padding: 1rem;
+  }
+  .p{
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width:1198px) {
+    .p{
+        display: none;
+    }
+}
+@media screen and (max-width:800px) {
+    .for_one_person{
+        display: none;
+    }
+}
+
+@media screen and (max-width:775px) {
+    .h2{
+        display: none;
+    }
+}
+
+@media screen and (max-width:558px){
+    .content{
+    top:1rem;
+    left: 0;
+    }
+    .full_image{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .content{
+        display: none;
+    }
+}
 .links a{
    color: black;
    font-weight: 500;
@@ -119,6 +219,10 @@ footer .row a{
 
 .last_line{
     text-align: center;
+}
+.link-below{
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 
 @media screen and (max-width: 1200px) {
@@ -168,3 +272,38 @@ h2{
 
   }
   
+@media screen and (max-width:559px) {
+    .box{
+        width: 12rem;
+        overflow-x: hidden;
+        text-align: center;
+    }
+        .row-icons{
+            margin: 4rem;
+        }
+
+        
+}
+  buy :hover{
+    text-decoration: underline;
+    text-decoration-color:white ;
+  }
+
+
+  /* carasouel 2 */
+  .cara-2{
+    background-color: #6B0E34;
+    /* height: 20vh; */
+  }
+
+  .cara-2-slider img
+  {
+    /* height: 70vh;
+    width: 100vw; */
+    max-width: 100%;
+    height: auto;
+  }
+
+  .row-icon a{
+    color: #262626;
+  }
